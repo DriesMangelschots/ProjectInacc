@@ -1,0 +1,137 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+/* Lettertype en kleur definiëren */
+:root{
+    --main-font: 'Asap', sans-serif;
+    --secondary-font: 'Kanit', sans-serif;
+ 
+   
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+.navbar-nav{
+    font-family: var(--secondary-font);
+}
+h1{
+    font-family: var(--secondary-font);
+}
+p{
+    font-family: var(--main-font);
+}
+/* jumbotron begin pagina */
+.jumbotron {
+    color: #ffffff;
+    background-image: url(../img/voorpagina2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+  }
+  .display-4{
+      text-align: center;
+  }
+  .display-5{
+    text-align: center;
+}
+.page-footer{
+    background-color: #DCDCDC;
+    opacity: 0.6;  
+}
+.link:link{
+    color: #000000;
+}
+.link:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+h3{
+    text-align: center;
+    padding: 1rem;
+}
+.contact{
+    text-align: center;
+}
+/*
+.parallax{
+    background-image: url(../img/Team_voorpagina.jpg);
+    opacity: 0.7;
+     
+ 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+.my-5{
+    width: 50%;
+}
+/* Team */
+.jumbotron-team{
+
+    color: #ffffff;
+    background-image: url(../img/Team_voorpagina.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    height: 50%; 
+    min-height: 400px;
+ 
+}
+/* Contact */
+.map-container{
+    height: 400px;
+}
+
+/* opmaak Foto Homepagina*/
+.Foto{
+	position: relative;
+	text-align: center;
+	color: black;
+  }
+  .centered {
+	position: absolute;
+	top: 650%;
+	left: 0%;
+	transform: translate(-50%, -50%);
+  }
+
+/*Opmaak formulier*/
+ /* Opmaak tekstvlakken*/
+ input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Opmaak van het knopje */
+  input[type=submit] {
+	background-color: rgb(94, 94, 94);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /*Opmaak als je over het knopje beweegt*/
+  input[type=submit]:hover {
+	background-color: #000000;
+  }
+  
+  .formulier {
+	border-radius: 5px;
+	padding: 20px;
+  }
