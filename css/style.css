@@ -24,9 +24,39 @@ p{
     font-family: var(--main-font);
 }
 /* jumbotron begin pagina */
+
+.index-content .btn-dark {
+    border-radius: 22px;
+    padding: 12px 30px ;
+    margin-top: 1.5rem;
+    font-weight: 700;
+   
+   
+ 
+ }
+/* Section 2 */
+.section-2 .container-fluid{
+    background-image: url('../img/two-person.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section-2 .heading-1{
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+.section-2 .heading-1{
+    margin-top: 20%;
+    margin-bottom: 4;
+    font-family: 'Righteous';
+    width: 80%;
+    color: #000000;
+
+}
+
+
 .jumbotron {
     color: #ffffff;
-    background-image: url(../img/voorpagina2.jpg);
+    background-image: url(../img/man.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,21 +83,37 @@ h3{
     text-align: center;
     padding: 1rem;
 }
+.center-title{
+    margin-left: -5rem;
+}
 .contact{
     text-align: center;
 }
-/*
+
 .parallax{
-    background-image: url(../img/Team_voorpagina.jpg);
-    opacity: 0.7;
-     
- 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background: url('../img/business.jpg')no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 30vw; 
+    color: #ffffff;
+    display: flex; 
+    align-items: center;
 }
-*/
+.btn-dark{
+    text-align: right;
+    float: left;
+}
+.col-5 h1{ 
+    font-size: 5vw!important;
+}
+.container-para{
+    max-width: 960px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-size: 24px;
+    padding: 25px;
+}
+
 .my-5{
     width: 50%;
 }
@@ -135,3 +181,16 @@ h3{
 	border-radius: 5px;
 	padding: 20px;
   }
+/* links pagina */
+#links{
+    background: silver;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.links{
+    
+    margin-top: 8%;
+}
+#links ul li{
+    margin: 10px 0;
+}
