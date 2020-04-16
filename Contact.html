@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0071)file:///C:/Users/Mathias%20Tweepenninck/Downloads/Contactformulier.html -->
+<html lang="nl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
        <!--Font awesome CDN-->
@@ -10,31 +10,37 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-</head>
+<style>
+ p.weergeven, p.invalid{
+    display: none;
+    color: red;
+  }
+</style><script type="text/javascript" charset="UTF-8" src="./ContactVerb_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./ContactVerb_files/util.js.download"></script></head>
+
 <body>
 
    <!-- navbar -->  
    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-    <a class="navbar-brand" href="index.html"><img src="./img/Logo_inacc.gif" alt="voorpagina" height="40"></a>
+    <a class="navbar-brand" href="file:///C:/Users/Mathias%20Tweepenninck/Downloads/index.html"><img src="file:///C:/Users/Mathias%20Tweepenninck/Downloads/img/Logo_inacc.gif" alt="voorpagina" height="40"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="file:///C:/Users/Mathias%20Tweepenninck/Downloads/index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Team.html">Team</a>
+          <a class="nav-link" href="file:///C:/Users/Mathias%20Tweepenninck/Downloads/Team.html">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Aanbod</a>
+          <a class="nav-link" href="file:///C:/Users/Mathias%20Tweepenninck/Downloads/Contactformulier.html#">Aanbod</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Links.html">Links</a>
+          <a class="nav-link" href="file:///C:/Users/Mathias%20Tweepenninck/Downloads/Links.html">Links</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Contact.html">Contact</a>
+          <a class="nav-link" href="file:///C:/Users/Mathias%20Tweepenninck/Downloads/Contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -43,8 +49,8 @@
   
 
   <div class="jumbotron-team jumbotron-fluid">
-    <div class="container"></div>
-      <h1 class="display-4">Team</h1>
+    <div class="container">
+      <h1 class="display-4">Contact</h1>
       
       <p class="display-5">All you need is Integrated Accountancy</p>
     </div>
@@ -55,45 +61,121 @@
    <div id="map"></div>
 
    <!--Tekstvlakken van het contactformuler-->
-   <div class="formulier">
+  <div class="formulier">
     <p>
-     Wilt u aan ons een vraagstellen of een afspraak maken?<br/>
+     Wilt u aan ons een vraagstellen of een afspraak maken?<br>
      Vul dan het onderstaande formulier in en wij contacteren u zo snel mogelijk terug.
     </p>
- 
-   <label for="naam">Naam</label>
-   <input type="text" id="naam" name="txtNaam" placeholder="Naam" required>
- 
-   <label for="voornaam">Voornaam</label>
-   <input type="text" id="voornaam" name="txtVoornaam" placeholder="Voornaam" required>
- 
-   <label for="mail">E-mailadres</label>
-   <input type="text" id="mail" name="txtMail" placeholder="mail@example.be" required>
-   
-   <label for="telefoonnummer">Telefoonnummer (Als wij u telefonisch moeten contacteren)</label>
-   <input type="text" id="mail" name="txtMail" placeholder="Voornaam">
-    
-   <label for="onderwerp">Onderwerp</label>
-   <input type="text" id="onderWERP" name="txtOnderwerp" placeholder="Belasingsformuleir" required>
-   
-   <label for="vraag">Je vraag</label>
-   <textarea id="txtVraag" name="txtvraag" placeholder="Hier kan je je vraag neerschrijven" style="height:200px" required></textarea>
- 
-   <input type="submit" value="Vraag indienen">
- 
-   </form>
- </div>
+    <form name="formContact">
+		<label for="naam">Naam</label>
+		<input type="text" id="naam" name="naam" placeholder="Naam" required="">
+		<div><p id="messageNaam" class="weergeven">Verplicht veld</p></div>
+
+		<label for="voornaam">Voornaam</label>
+		<input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required="">
+		<div><p id="messageVoornaam" class="invalid">Verplicht veld</p></div>
+
+		<label for="mail">E-mailadres</label>
+		<input type="text" id="mail" name="mail" placeholder="mail@example.be" required="">
+		<div><p id="messageMail" class="invalid">Verplicht veld</p></div>
+
+		<label for="txtTelefoonnummer">Telefoonnummer (Als wij u telefonisch moeten contacteren)</label>
+		<input type="text" id="txtTelefoonnummer" name="txtTelefoonnummer" placeholder="telefoonnummer">
+	  
+
+		<label for="onderwerp">Onderwerp</label>
+		<input type="text" id="onderwerp" name="onderwerp" placeholder="Belasingsformuleir" required="">
+		<div><p id="messageOnderwerp" class="invalid">Verplicht veld</p></div>
+
+		<label for="vraag">Je vraag</label>
+		<textarea id="vraag" name="vraag" placeholder="Hier kan je je vraag neerschrijven" style="height:200px" required=""></textarea>
+		<div><p id="messageVraag" class="invalid">Verplicht veld</p></div>
+
+		<input id="submit" onclick="verzamelingValidaties()" type="submit" value="Vraag indienen">
+	</form>
+  </div>
+
 <!--Einde Tekstvlakken van het contactformuler-->
 <script>
- //Validatie of alles wel ingevuld is
- var controle = document.forms["formNaam"]["txtNaam"].value;
- function validatieFormulier() {
-   if (controle == "") {
-     alert("vul dit veld in");
-     return false;
-   }
- }
-    </script>
+  function verzamelingValidaties() {
+    var validerenNaam = validatieNaam();
+    var validerenVoornaam = validatieVoornaam();
+    var validerenMail =  validatieMail();
+    var validerenOnderwerp = validatieOnderwerp();
+    var validerenVraag = validatieVraag();
+  }  
+
+  function validatieNaam() {
+    var inputNaam = document.getElementById("naam");
+    var weergevenTekst = document.getElementById("messageNaam");
+    if(inputNaam.value.length == 0) {
+      weergevenTekst.style.display = "block";
+      return false;
+    } else {
+      weergevenTekst.style.display = "none";
+      return true;
+    }   
+  }
+
+  function validatieVoornaam(){
+    var inputVoornaam = document.getElementById("voornaam");
+    var weergevenTekst = document.getElementById("messageVoornaam");
+    if(inputVoornaam.value.length == 0) {
+      weergevenTekst.style.display = "block";
+      return false;
+    } else {
+      weergevenTekst.style.display = "none";
+      return true;
+    }
+  }
+
+  function validatieMail(){
+    var inputMail = document.getElementById("mail");
+    var weergevenTekst = document.getElementById("messageMail");
+    if(inputMail.value.length == 0) {
+      weergevenTekst.style.display = "block";
+      return false;
+    } else {
+      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if(inputMail.value.match(mailformat))
+      {
+        weergevenTekst.style.display = "none";
+        return true;
+      }
+      else
+      {
+        alert("You have entered an invalid email address!");
+        return false;
+      }
+
+    }  
+  }
+  
+
+  function validatieOnderwerp(){
+    var inputOnderwerp = document.getElementById("onderwerp");
+    var weergevenTekst = document.getElementById("messageOnderwerp");
+    if(inputOnderwerp.value.length == 0) {
+      weergevenTekst.style.display = "block";
+      return false;
+    } else {
+      weergevenTekst.style.display = "none";
+      return true;
+    }
+  }
+
+  function validatieVraag(){
+    var inputVraag = document.getElementById("vraag");
+    var weergevenTekst = document.getElementById("messageVraag");
+    if(inputVraag.value.length == 0) {
+      weergevenTekst.style.display = "block";
+      return false;
+    } else {
+      weergevenTekst.style.display = "none";
+      return true;
+    }
+  }
+</script>
 
 
  <!-- footer -->
@@ -113,7 +195,7 @@
                 <div class="contact ">
                   <ul class="opening-time list-unstyled">
                     <li><span><i class="fa align fa-check"></i></span><p class="contact">Maandag - Vrijdag : 08:00 - 17:30</p></li>
-                    <li><span><i class="fa fa-times"></i></span><p class="contact">Zaterdag & Zondag : Gesloten </p></li>
+                    <li><span><i class="fa fa-times"></i></span><p class="contact">Zaterdag &amp; Zondag : Gesloten </p></li>
                   </ul>
                    </div>
                 </div>
@@ -148,7 +230,7 @@
     </div>
     <!-- Footer Links -->
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <div class="footer-copyright text-center py-3">� 2020 Copyright:
       <a class="link" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
     </div>
     <!-- Copyright -->
@@ -158,12 +240,12 @@
 
 
     <!-- script -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJO6Ge2TPUgMt7J6BTyeEcTO7I8FDLMlQ&callback=initMap">
+    <script async="" defer="" src="./ContactVerb_files/js">
     </script>
-    <script src="./javascript/index.js"></script>
+    <script src="file:///C:/Users/Mathias%20Tweepenninck/Downloads/javascript/index.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-</html>
+<script src="./ContactVerb_files/jquery-3.4.1.slim.min.js.download" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="./ContactVerb_files/popper.min.js.download" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="./ContactVerb_files/bootstrap.min.js.download" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body></html>
