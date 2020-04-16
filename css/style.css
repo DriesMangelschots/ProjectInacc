@@ -258,3 +258,10 @@ h3{
     width:100%;
     position:absolute;
 }
+
+
+/*Opmaak tekst "Verplicht veld"*/
+p.weergeven, p.invalid{
+    display: none;
+    color: red;
+  }
