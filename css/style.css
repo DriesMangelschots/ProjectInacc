@@ -230,6 +230,7 @@ h3{
 	border-radius: 5px;
 	padding: 20px;
   }
+
 /* links pagina */
 #links{
     background: silver;
@@ -265,3 +266,61 @@ p.weergeven, p.invalid{
     display: none;
     color: red;
   }
+
+/* Kendra*/
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+  
+.social-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+  
+.social-icons ul li {
+    float: left;
+    margin-right: 8px;
+}
+  
+.social-icons ul li:last-child {
+    margin-right: 0;
+}
+  
+.social-icons ul li a {
+    color:#fff;
+    background-color: #272727; /* #d9d9d9 */
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    display: block;
+    font-size: 16px;
+    opacity: 0.8;
+}
+  
+.social-icons ul li a:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* icons */
+.circle-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+}
+/*
+background: #d1d1d1;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+*/
