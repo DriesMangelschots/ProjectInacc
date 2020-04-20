@@ -23,6 +23,40 @@ h1{
 p{
     font-family: var(--main-font);
 }
+/* shine hover logo */
+/* Shine */
+.hoverlogo figure {
+	position: relative;
+}
+.hoverlogo figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hoverlogo figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
 /* navbar onderlijnen */
 .nav-link {
     font-weight: bold;
@@ -67,9 +101,24 @@ ul li a {
     transform: scaleX(1);
     transform-origin: left;
   }
-/* lightbox */
-.row{
-    margin: 15px;
+/* slider */
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%; } }
+    
+    .carousel-multi-item-2 .card img {
+    border-radius: 2px; }
+/* hover effect */
+.card{
+    overflow: hidden;
+}
+.card img{
+    transition: 1.5s all ease;
+}
+.card:hover img{
+    transform: scale(1.5);
 }
 /* jumbotron begin pagina */
 
@@ -81,6 +130,9 @@ ul li a {
    
    
  
+ }
+.fa-angle,i{
+     color: black;
  }
  
 /* Section 2 */
@@ -101,7 +153,27 @@ ul li a {
     color: #000000;
 
 }
-
+/* cards 2 */
+.card-title{
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #031D44;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+.card-title:hover{
+   
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px  grey;
+}
+i.hoveren:hover{
+    color: #eb9a33;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+.navbar:hover{
+    zoom: 150%;
+}
 
 .jumbotron {
     color: #ffffff;
@@ -180,23 +252,16 @@ h3{
     min-height: 400px;
  
 }
+/* links */
+.section.bg {
+    background: #f7f7f7;
+  }
 /* Contact */
 .map-container{
     height: 400px;
 }
 
-/* opmaak Foto Homepagina*/
-.Foto{
-	position: relative;
-	text-align: center;
-	color: black;
-  }
-  .centered {
-	position: absolute;
-	top: 650%;
-	left: 0%;
-	transform: translate(-50%, -50%);
-  }
+
 
 /*Opmaak formulier*/
  /* Opmaak tekstvlakken*/
@@ -259,7 +324,13 @@ h3{
     width:100%;
     position:absolute;
 }
-
+.handig a{
+    color: #000000;
+    text-decoration: none;
+}
+.handig a:hover{
+    color: #031D44;
+}
 
 /*Opmaak tekst "Verplicht veld"*/
 p.weergeven, p.invalid{

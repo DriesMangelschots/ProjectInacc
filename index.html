@@ -10,12 +10,15 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon1.ico">
 </head>
 <body>
    
    <!-- navbar -->  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-    <a class="navbar-brand" href="index.html"><img src="./img/Logo_inacc.gif" alt="voorpagina" height="40"></a>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+    <div class="hoverlogo">
+    <a class="navbar-brand" href="index.html"> <figure> <img src="./img/Logo_inacc.gif" alt="voorpagina" height="40"></figure></a>
+  </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,9 +39,9 @@
         <li class="nav-item">
           <a class="nav-link nav-link-fade-up" href="Contact.html">Contact</a>
         </li>
-        <div class="animation start-home"></div>
+       
       </ul>
-     
+      <div class="animation start-home"></div>
     </div>
   </nav>   
   
@@ -57,8 +60,7 @@
       All you need is Integrated Accountancy
    
   </p>
-  <a href="#about-image"> <button type="button" class="btn btn-dark"> Ontdek </button></a>
-    
+ <a class="btn btn-dark button" href="#about-image">Ontdek</a>
   </div>
 </div>
 </div>
@@ -69,45 +71,110 @@
      <div class="col-lg-6 col-md-12">
        <div class="about-image" id="about-image">
 
+<!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+
+  <!--Controls-->
+  <div class="controls-top">
+    <a class="black-text" href="#multi-item-example" data-slide="prev"><i class="fas fa-angle-left fa-3x pr-3"></i></a>
+    <a class="black-text" href="#multi-item-example" data-slide="next"><i class="fas fa-angle-right fa-3x pl-3"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="./img/inacc_foto1.png"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="./img/Inacc_foto2.png"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="./img/Inacc_foto3.png"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="./img/Team.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="./img/carousel5.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="./img/carousel6.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="./img/carousel7.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <img class="img-fluid" src="./img/carousel8.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+
+    
+
+    
+    <!--/.Third slide-->
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+
 
 
  
-        <div class="container">
-          <div class="col-lg-12">
-          <div class="row">
-         
-            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-sm-4 ">
-              <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-sm-4">
-              <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-sm-4">
-              <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
-            </a>
-          </div>
-          <div class="row">
-            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-sm-4">
-              <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-sm-4">
-              <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-sm-4">
-              <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">
-            </a>
-          </div>
-        </div>
-        </div>
-      
-    <br>    
+       
+       
        </div>
      </div>
      <div class="col-lg-6 col-md-12 about-title">
-       <h1 class="center-title text-uppercase pt-5">
+       <h1 class="center-title pt-5">
         Over ons
        </h1>
-       <div class="paragraph py-4 w-75">
+       <div class="paragraph py-4">
          <p class="para">
           Als erkend accountantskantoor zijn wij de permanente en wettelijke raadgever van bedrijven en zelfstandigen voor de administratieve, boekhoudkundige en fiscale
           organisatie van uw onderneming.
@@ -118,7 +185,7 @@
  </div>
  
 
-
+</section>
 
 <div class="container-fluid">
   <div class="parallax">
@@ -130,11 +197,13 @@
       <div class="col-2"></div>
       <div class="col-4">
       
-      <a href="#aanbod"><button type="button" class="btn btn-dark btn-lg">Klik hier</button></a>
-        </div>
+      
+      <a class="button btn-dark btn-lg" href="#aanbod">Klik hier</a>
+
+    </div>
       </div>
     </div>
-  </div>
+  
 </div>
 
 
@@ -144,19 +213,21 @@
 <section class="services-area">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-center services-title ">
-        <h1 class="text-upparcase title-text"> Ons aanbod</h1>
+      <div class="col-lg-12 text-center services-title">
+        <h1> Ons aanbod</h1>
         <p class="para" id="aanbod">
           Een meerwaarde bieden aan bedrijven en zelfstandigen door transparantie en communicatie hoog in het vaandel te dragen ! Het verifiëren en corrigeren van de boekhoudkundige documenten zijn immers van fundamenteel belang voor een gezond bedrijfsleven. Een succesvol bedrijf heeft dan ook financieel en fiscale zaken immers steeds onder controle !
         </p>  
-      </div> 
-    </div>
+      </div>
+      </div>
+      </div>
+     
     <div class="container services-list">
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="services">
             <div class="services-img text-center py-4">
-              <i class="fas fa-7x fa-file-signature"></i>
+              <i class="fas fa-7x fa-file-signature hoveren"></i>
             </div>
             <div class="card-body text-center">
               <p class="card-title  font-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eum ex ipsa harum iste assumenda</p>
@@ -169,7 +240,7 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="services">
                 <div class="services-img text-center py-4">
-                  <i class="fas fa-7x fa-user-tie"></i>
+                  <i class="fas fa-7x fa-user-tie hoveren"></i>
                 </div>
                 <div class="card-body text-center">
                   <p class="card-title font-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eum ex ipsa harum iste assumenda</p>
@@ -179,10 +250,11 @@
            
       </div>
     </div>
+
     <div class="col-lg-3 col-md-6 col-sm-12">
       <div class="services">
         <div class="services-img text-center py-4">
-          <i class="fas fa-7x fa-briefcase"></i>
+          <i class="fas fa-7x fa-briefcase hoveren"></i>
         </div>
         <div class="card-body text-center">
           <p class="card-title font-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eum ex ipsa harum iste assumenda/p>
@@ -194,20 +266,23 @@
      <div class="col-lg-3 col-md-6 col-sm-12">
       <div class="services">
         <div class="services-img text-center py-4">
-          <i class="fas fa-7x fa-search"></i>
+          <i class="fas fa-7x fa-search hoveren"></i>
         </div>
         <div class="card-body text-center">
           <p class="card-title font-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eum ex ipsa harum iste assumenda</p>
         </div>
         
-     
+    </div>
   </div>
+  </div>
+  </div>
+  <hr class="my-5">
 </section>
 
 
 <!--Onze troeven-->
 <section class="container-troef text-center">
-  <hr class="my-5">
+ 
   <h1>Onze troeven</h1>
  
   <p>Jarenlange ervaring en goed opgeleid personeel dat mee evolueert met de diverse materies.</p>
@@ -221,7 +296,7 @@
   
   <div class="map-responsive">
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.8022010661707!2d4.909809351088335!3d51.22271933919887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c14d17dbb199e9%3A0x317668e48c84f08d!2sInacc!5e0!3m2!1snl!2sbe!4v1586195890042!5m2!1snl!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.8022010661707!2d4.909809351088335!3d51.22271933919887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c14d17dbb199e9%3A0x317668e48c84f08d!2sInacc!5e0!3m2!1snl!2sbe!4v1586195890042!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
 
 </div>
@@ -255,9 +330,9 @@
       <div class="col-md-4 mb-md-0 mb-3">
         <!-- Links -->
         <h3>Adres</h3>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled contact">
           
-          <p class="contact">Herentalseteenweg 22 2460 Lichtaart </p>
+         <li> Herentalseteenweg 22 2460 Lichtaart</li>
         </ul>
 
       </div>
@@ -266,10 +341,11 @@
       <div class="col-md-4 mb-md-0 mb-3">
         <!-- Links -->
         <h3>Contact info</h3>
-        <ul class="list-unstyled">
-          <p class="contact">lichtaart@inacc.be</p>
-          <p class="contact">Tel: 014 40 50 30 </p>
-          <p class="contact">Fax: 014 40 50 39</p>
+        <ul class="list-unstyled contact">
+          <li><p class="contact">lichtaart@inacc.be</p></li>
+          <li><p class="contact">Tel: 014 40 50 30</p></li>
+          <li><p class="contact">Fax: 014 40 50 39</p></li>
+         
          
         </ul>
       </div>
