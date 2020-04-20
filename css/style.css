@@ -11,7 +11,7 @@
 html,body{
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     color: #000000;
 }
 .navbar-nav{
@@ -116,6 +116,7 @@ ul li a {
 }
 .card img{
     transition: 1.5s all ease;
+    
 }
 .card:hover img{
     transform: scale(1.5);
@@ -152,6 +153,9 @@ ul li a {
     width: 80%;
     color: #000000;
 
+}
+.no-underline:hover{
+    text-decoration: none;
 }
 /* cards 2 */
 .card-title{
@@ -256,6 +260,9 @@ h3{
 .section.bg {
     background: #f7f7f7;
   }
+.inzoom:hover img{
+    transform: scale(105%)
+}
 /* Contact */
 .map-container{
     height: 400px;
