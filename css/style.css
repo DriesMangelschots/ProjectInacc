@@ -181,7 +181,7 @@ i.hoveren:hover{
 
 .jumbotron {
     color: #ffffff;
-    background-image: url(../img/man.jpg);
+    background-image: url(../img/carousel8.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,6 +266,9 @@ h3{
 /* Contact */
 .map-container{
     height: 400px;
+}
+.title{
+    color: #ecf0f1
 }
 
 
@@ -392,13 +395,4 @@ p.weergeven, p.invalid{
     padding: 0;
     margin: 0;
 }
-/*
-background: #d1d1d1;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    vertical-align: middle;
-    padding: 30px;
-*/
+
